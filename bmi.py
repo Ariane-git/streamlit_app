@@ -18,6 +18,7 @@ except:
 
 if(st.button("Calculate BMI")):
     st.write("Your BMI is: ", round(bmi,2))
+    st.balloons()
     if bmi<18.5:
         st.warning("You are underweight")
     elif bmi>=18.5 and bmi<24.9:
@@ -26,4 +27,3 @@ if(st.button("Calculate BMI")):
         st.info("You are overweight")
     else:
         st.warning("You are obese")
-st.balloons()
